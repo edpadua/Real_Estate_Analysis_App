@@ -1,3 +1,5 @@
+![image](https://github.com/edpadua/Real_Estate_Analysis_App/blob/main/capture.gif)
+
 # 🏡 Aplicativo de Análise e Recomendação Imobiliária
 **(Real Estate Analysis and Recommendation App)**
 
