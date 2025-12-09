@@ -1,44 +1,43 @@
 ![image](https://github.com/edpadua/Real_Estate_Analysis_App/blob/main/capture.gif)
 
-# 🏡 Aplicativo de Análise e Recomendação Imobiliária
-**(Real Estate Analysis and Recommendation App)**
+# 🏡 Real Estate Analysis and Recommendation App
 
-Um projeto full-stack (Web e Data Science) desenvolvido em Python que utiliza um modelo de Machine Learning para estimar o "Preço Justo" de um imóvel com base em suas características e fornece uma recomendação de investimento clara.
-
----
-
-## ✨ Funcionalidades Principais
-
-* **Previsão de Preços:** Utiliza um modelo de **Regressão Linear Múltipla** (Scikit-learn) para calcular o valor de mercado esperado (Preço Justo) de um imóvel.
-* **Recomendação de Investimento:** Compara o preço de venda informado pelo usuário com o preço previsto pelo modelo, classificando o imóvel como **'Ótima Oportunidade'**, **'Preço Alinhado'** ou **'Preço Elevado'**.
-* **Interface Web Interativa:** Apresentação dos dados e resultados em um painel web dinâmico e fácil de usar, construído com **Streamlit**.
-* **Transparência do Modelo:** Exibe a **Influência Estatística** das diferentes características (Área, Quartos, Distância do Centro) sobre o preço final.
+A full-stack project (Web + Data Science) built in Python that uses a Machine Learning model to estimate the **“Fair Price”** of a property based on its characteristics and provides a clear investment recommendation.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## ✨ Main Features
 
-| Categoria | Tecnologia | Uso Principal |
+* **Price Prediction:** Uses a **Multiple Linear Regression** model (Scikit-learn) to calculate the expected market value (Fair Price) of a property.
+* **Investment Recommendation:** Compares the user-provided sale price with the model’s predicted price, classifying the property as an **"Excellent Opportunity"**, **"Fair Price"**, or **"Overpriced"**.
+* **Interactive Web Interface:** Presents data and results in a dynamic, user-friendly web dashboard built with **Streamlit**.
+* **Model Transparency:** Displays the **Statistical Influence** of different features (Area, Bedrooms, Distance from City Center) on the final price.
+
+---
+
+## 🛠️ Technologies Used
+
+| Category | Technology | Purpose |
 | :--- | :--- | :--- |
-| **Linguagem** | Python | Lógica principal, Análise de Dados e Back-end. |
-| **Modelagem** | Scikit-learn (Linear Regression) | Treinamento do modelo preditivo de preços. |
-| **Web Framework** | Streamlit | Criação da interface web interativa (Front-end). |
-| **Manipulação de Dados** | Pandas e NumPy | Simulação (ou carregamento) e tratamento dos dados. |
-| **Empacotamento** | joblib | Salvar e carregar o modelo treinado. |
+| **Language** | Python | Main logic, data analysis, and back-end. |
+| **Modeling** | Scikit-learn (Linear Regression) | Training the price prediction model. |
+| **Web Framework** | Streamlit | Building the interactive web interface (Front-end). |
+| **Data Handling** | Pandas & NumPy | Dataset simulation/loading and preprocessing. |
+| **Packaging** | joblib | Saving and loading the trained model. |
 
 ---
 
-## 🚀 Como Executar o Projeto Localmente
+## 🚀 How to Run the Project Locally
 
-Siga os passos abaixo para rodar a aplicação na sua máquina.
+Follow the steps below to run the application on your machine.
 
-### 1. Pré-requisitos
+### 1. Requirements
 
-Certifique-se de ter o Python instalado (versão 3.8+ recomendada).
+Make sure Python (version 3.8+) is installed.
 
-### 2. Instalação das Dependências
+### 2. Installing Dependencies
 
-Crie um arquivo `requirements.txt` com as seguintes bibliotecas e instale-as:
+Create a `requirements.txt` file with the following libraries and install them:
 
 ```bash
 # requirements.txt
@@ -47,45 +46,3 @@ numpy
 scikit-learn
 streamlit
 joblib
-```
-
-Instale as dependências:
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Execução da Aplicação
-
-```bash
-python -m streamlit run app_en.py
-```
-
-O aplicativo será aberto automaticamente no seu navegador, geralmente em http://localhost:8501.
-
-## 📊 Estrutura e Data Science (O Processo)
-
-O projeto demonstra as seguintes etapas de um **pipeline de Ciência de Dados**:
-
-* **Aquisição de Dados:** Utiliza um dataset simulado (na versão inicial) com características-chave de imóveis (Área, Quartos, Distância).
-* **Modelagem:** O modelo de **Regressão Linear** é treinado para entender o peso (coeficientes) de cada característica no preço final do imóvel.
-* **Deploy:** O modelo treinado é carregado na aplicação **Streamlit**, permitindo a **inferência** em tempo real a partir da entrada do usuário.
-
-### Exemplo de Previsão
-
-Quando o usuário insere os dados, o modelo faz a previsão utilizando a equação:
-
-$$
-\text{Preço Estimado} = C_0 + C_1 \cdot (\text{Área}) + C_2 \cdot (\text{Quartos}) + C_3 \cdot (\text{Distância ao Centro})
-$$
-
-*Onde $C_n$ são os coeficientes (pesos) aprendidos pelo modelo durante o treinamento.*
-
----
-
-## 🧑‍💻 Autor
-
-Seu Nome
-* [https://linkedin.com/in/edupadua/]
-
-
-
